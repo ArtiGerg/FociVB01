@@ -1,0 +1,47 @@
+
+"A választható feladatok közül a kompozíciót választottam."
+(Kevés sikerrel :/ )
+
+1. Feladat
+
+A RuntimeExceptionok olyan kívételek amiket programozottan meg tudjuk akadályozni.
+pl. a NullPointerException - ellenőrizni kell a null értékét és kezelni.
+itt viszont érdemes figyelni a kezelésüknél, mivel ha előre számítunk rá , akkor tudunk rá készülni mit
+csináljon amikor fellép a hiba.
+Figyelni kell rá hogy mindig kezeljük, mert ha csak dobáljuk akkor a program lehet hogy le fog futni , de hibásan
+
+Az Exceptionoknél már a fordító észreveszi a hibát, és nem is fog futni a program, ez a hiba kezeletlen.
+
+2. Feladat
+
+ A kollekciókból a " .remove " szó használatával tudunk elemeket törölni.
+
+  Iterator<String> i = names.iterator();
+
+  while(i.hasNext()) {
+      String e = i.next();
+      if (e.startsWith("A")) {
+          i.remove();
+      }
+  }
+
+  3.Feladat
+
+    -absztrakció : egyszerű dolgokhoz használjuk. pl. a metódusoknak csak a törzsét alakítja ki ,
+                                                        vagy az osztályoknál csak 1-2 metódust írunk.
+    -enkapszuláció:  minden osztály elrejti a reprezentációját, ami összetartozik azok látjál egymást a többiek nem.
+    -öröklődés: A Javában csak egyszeres öröklődés van.
+                Az osztály csak egy másik osztályból öröklődhet.
+                A konstruktorok nem öröklődnek
+    - többalakúság: Több metódusnak ugyanaz a neve, mégis mást csinálnak (Overloading, overriding)
+    -csatolűs: Ezek a láthatósági jelzők(public, private, protected, package private)
+    kohézió: egy egység egyetlen feladatot csinál csak.
+    asszociáció: amikor két objektumról megnézzük hogy van-e kapcsolat , és milyen kapcsolat
+    kompozició: asszociációhoz hasonló, csak itt sokkal szorosabb a viszony, az egyik objektum nem létezik a másik nélkül
+    aggregáció: olyan mint a kompozició, csak az objektum állapotához tartózó másik objektum, önnállóan is megvan.
+
+   4. Feladat
+
+    A Compare adatszerkezettel lehetne sorrendbe rakni dátum szerint.
+
+    és a dátumot Stringról Date formátumba szerkezteni.
